@@ -1,4 +1,4 @@
-package com.jideguru.flutter_foodybite
+package com.aibrain.flutter_delivery
 
 import io.flutter.embedding.android.FlutterActivity
 
