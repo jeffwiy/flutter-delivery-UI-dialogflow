@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_delivery_UI_dialogflow/util/categories.dart';
+import 'package:flutter_delivery_UI_dialogflow/util/sides.dart';
 import 'package:flutter_delivery_UI_dialogflow/widgets/category_item.dart';
 
 class Categories extends StatefulWidget {
@@ -23,9 +23,9 @@ class _CategoriesState extends State<Categories> {
         child: GridView.count(
           crossAxisCount: 2,
           children: List.generate(
-            categories.length,
+            sides.length,
             (index) {
-              var cat = categories[index];
+              var cat = sides[index];
               return Container(
                 padding: EdgeInsets.all(8.0),
                 child: ClipRRect(

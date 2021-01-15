@@ -3,9 +3,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_delivery_UI_dialogflow/screens/categories.dart';
 import 'package:flutter_delivery_UI_dialogflow/screens/trending.dart';
-import 'package:flutter_delivery_UI_dialogflow/util/categories.dart';
-import 'package:flutter_delivery_UI_dialogflow/util/friends.dart';
-import 'package:flutter_delivery_UI_dialogflow/util/restaurants.dart';
+import 'package:flutter_delivery_UI_dialogflow/util/sides.dart';
+import 'package:flutter_delivery_UI_dialogflow/util/pizzas.dart';
 import 'package:flutter_delivery_UI_dialogflow/widgets/category_item.dart';
 import 'package:flutter_delivery_UI_dialogflow/widgets/search_card.dart';
 import 'package:flutter_delivery_UI_dialogflow/widgets/slide_item.dart';
@@ -20,11 +19,11 @@ class Home extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             SizedBox(height: 20.0),
-            buildRestaurantRow('Trending Restaurants', context),
+            buildRestaurantRow(' Pizza', context),
             SizedBox(height: 10.0),
             buildRestaurantList(context),
             SizedBox(height: 10.0),
-            buildCategoryRow('Category', context),
+            buildCategoryRow('Sides', context),
             SizedBox(height: 10.0),
             buildCategoryList(context),
             SizedBox(height: 20.0),
@@ -51,7 +50,7 @@ class Home extends StatelessWidget {
         ),
         FlatButton(
           child: Text(
-            "See all (9)",
+            "See all (6)",
             style: TextStyle(
               color: Theme.of(context).accentColor,
             ),
@@ -84,7 +83,7 @@ class Home extends StatelessWidget {
         ),
         FlatButton(
           child: Text(
-            "See all (9)",
+            "See all (6)",
             style: TextStyle(
               color: Theme.of(context).accentColor,
             ),
@@ -128,9 +127,9 @@ class Home extends StatelessWidget {
         primary: false,
         scrollDirection: Axis.horizontal,
         shrinkWrap: true,
-        itemCount: categories == null ? 0 : categories.length,
+        itemCount: sides == null ? 0 : sides.length,
         itemBuilder: (BuildContext context, int index) {
-          Map cat = categories[index];
+          Map cat = sides[index];
 
           return CategoryItem(
             cat: cat,
@@ -148,9 +147,9 @@ class Home extends StatelessWidget {
         primary: false,
         shrinkWrap: true,
         scrollDirection: Axis.horizontal,
-        itemCount: restaurants == null ? 0 : restaurants.length,
+        itemCount: pizzas == null ? 0 : pizzas.length,
         itemBuilder: (BuildContext context, int index) {
-          Map restaurant = restaurants[index];
+          Map restaurant = pizzas[index];
 
           return Padding(
             padding: const EdgeInsets.only(right: 10.0),
@@ -159,31 +158,6 @@ class Home extends StatelessWidget {
               title: restaurant["title"],
               address: restaurant["address"],
               rating: restaurant["rating"],
-            ),
-          );
-        },
-      ),
-    );
-  }
-
-  buildFriendsList() {
-    return Container(
-      height: 50.0,
-      child: ListView.builder(
-        primary: false,
-        scrollDirection: Axis.horizontal,
-        shrinkWrap: true,
-        itemCount: friends == null ? 0 : friends.length,
-        itemBuilder: (BuildContext context, int index) {
-          String img = friends[index];
-
-          return Padding(
-            padding: const EdgeInsets.only(right: 5.0),
-            child: CircleAvatar(
-              backgroundImage: AssetImage(
-                img,
-              ),
-              radius: 25.0,
             ),
           );
         },
