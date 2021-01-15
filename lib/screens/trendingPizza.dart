@@ -9,7 +9,7 @@ class Trending extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
-        title: Text("Trending Restaurants"),
+        title: Text("Pizza"),
         centerTitle: true,
       ),
       body: Padding(

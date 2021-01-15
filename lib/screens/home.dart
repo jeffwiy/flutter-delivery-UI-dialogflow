@@ -1,8 +1,8 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_delivery_UI_dialogflow/screens/categories.dart';
-import 'package:flutter_delivery_UI_dialogflow/screens/trending.dart';
+import 'package:flutter_delivery_UI_dialogflow/screens/sides.dart';
+import 'package:flutter_delivery_UI_dialogflow/screens/trendingPizza.dart';
 import 'package:flutter_delivery_UI_dialogflow/util/sides.dart';
 import 'package:flutter_delivery_UI_dialogflow/util/pizzas.dart';
 import 'package:flutter_delivery_UI_dialogflow/widgets/category_item.dart';
