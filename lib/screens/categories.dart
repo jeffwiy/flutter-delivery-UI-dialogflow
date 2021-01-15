@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_foodybite/util/categories.dart';
-import 'package:flutter_foodybite/widgets/category_item.dart';
+import 'package:flutter_delivery_UI_dialogflow/util/categories.dart';
+import 'package:flutter_delivery_UI_dialogflow/widgets/category_item.dart';
 
 class Categories extends StatefulWidget {
   @override

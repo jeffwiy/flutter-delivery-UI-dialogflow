@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_foodybite/screens/home.dart';
+import 'home.dart';
+import 'package:flutter_delivery_UI_dialogflow/dialogflow_v2.dart';
+
 
 class MainScreen extends StatefulWidget {
   @override
@@ -13,7 +15,7 @@ class _MainScreenState extends State<MainScreen> {
   List icons = [
     Icons.home,
     Icons.label,
-    Icons.add,
+    Icons.navigation,
     Icons.notifications,
     Icons.person,
   ];
@@ -49,9 +51,14 @@ class _MainScreenState extends State<MainScreen> {
       floatingActionButton: FloatingActionButton(
         elevation: 10.0,
         child: Icon(
-          Icons.add,
+          Icons.navigation,
         ),
-        onPressed: () => _pageController.jumpToPage(2),
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => HomePageDialogflowV2()),
+          );
+        },
       ),
     );
   }
