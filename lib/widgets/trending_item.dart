@@ -81,17 +81,6 @@ class _TrendingItemState extends State<TrendingItem> {
                     child: Card(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(3.0)),
-                      child: Padding(
-                        padding: EdgeInsets.all(4.0),
-                        child: Text(
-                          " OPEN ",
-                          style: TextStyle(
-                            fontSize: 10.0,
-                            color: Colors.green,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
                     ),
                   ),
                 ],
