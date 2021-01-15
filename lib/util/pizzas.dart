@@ -35,5 +35,4 @@ List pizzas = [
     "address": "Mushroom, Onion, Pepper, Eggplant, Olive, Broccoli",
     "rating": "4.3"
   },
-
 ];
