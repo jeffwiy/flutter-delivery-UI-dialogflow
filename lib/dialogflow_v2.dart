@@ -43,7 +43,7 @@ class _HomePageDialogflowV2 extends State<HomePageDialogflowV2> {
 
   void Response(query) async {
     _textController.clear();
-    AuthGoogle authGoogle = await AuthGoogle(fileJson: "assets/test_agent_credentials.json").build();
+    AuthGoogle authGoogle = await AuthGoogle(fileJson: "assets/test_agent_credentials-clientside.json").build();
     Dialogflow dialogflow =Dialogflow(authGoogle: authGoogle,language: Language.english);
     AIResponse response = await dialogflow.detectIntent(query);
     ChatMessage message = new ChatMessage(
