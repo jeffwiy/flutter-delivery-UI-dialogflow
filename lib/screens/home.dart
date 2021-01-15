@@ -1,14 +1,14 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_foodybite/screens/categories.dart';
-import 'package:flutter_foodybite/screens/trending.dart';
-import 'package:flutter_foodybite/util/categories.dart';
-import 'package:flutter_foodybite/util/friends.dart';
-import 'package:flutter_foodybite/util/restaurants.dart';
-import 'package:flutter_foodybite/widgets/category_item.dart';
-import 'package:flutter_foodybite/widgets/search_card.dart';
-import 'package:flutter_foodybite/widgets/slide_item.dart';
+import 'package:flutter_delivery_UI_dialogflow/screens/categories.dart';
+import 'package:flutter_delivery_UI_dialogflow/screens/trending.dart';
+import 'package:flutter_delivery_UI_dialogflow/util/categories.dart';
+import 'package:flutter_delivery_UI_dialogflow/util/friends.dart';
+import 'package:flutter_delivery_UI_dialogflow/util/restaurants.dart';
+import 'package:flutter_delivery_UI_dialogflow/widgets/category_item.dart';
+import 'package:flutter_delivery_UI_dialogflow/widgets/search_card.dart';
+import 'package:flutter_delivery_UI_dialogflow/widgets/slide_item.dart';
 
 class Home extends StatelessWidget {
   @override

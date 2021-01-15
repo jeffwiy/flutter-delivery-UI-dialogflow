@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_foodybite/util/const.dart';
+import 'package:flutter_delivery_UI_dialogflow/util/const.dart';
 
 class TrendingItem extends StatefulWidget {
   final String img;
