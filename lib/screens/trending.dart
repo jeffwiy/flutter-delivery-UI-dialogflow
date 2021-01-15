@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_delivery_UI_dialogflow/util/restaurants.dart';
+import 'package:flutter_delivery_UI_dialogflow/util/pizzas.dart';
 import 'package:flutter_delivery_UI_dialogflow/widgets/search_card.dart';
 import 'package:flutter_delivery_UI_dialogflow/widgets/trending_item.dart';
 
@@ -25,9 +25,9 @@ class Trending extends StatelessWidget {
               primary: false,
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
-              itemCount: restaurants == null ? 0 : restaurants.length,
+              itemCount: pizzas == null ? 0 : pizzas.length,
               itemBuilder: (BuildContext context, int index) {
-                Map restaurant = restaurants[index];
+                Map restaurant = pizzas[index];
 
                 return TrendingItem(
                   img: restaurant["img"],
