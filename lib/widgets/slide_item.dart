@@ -105,6 +105,7 @@ class _SlideItemState extends State<SlideItem> {
                 padding: EdgeInsets.only(left: 15.0),
                 child: Container(
                   width: MediaQuery.of(context).size.width,
+                  padding: EdgeInsets.only(right: 20),
                   child: Text(
                     "${widget.address}",
                     style: TextStyle(
