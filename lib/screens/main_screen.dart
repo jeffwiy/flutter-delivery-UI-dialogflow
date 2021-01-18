@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'home.dart';
-import 'package:flutter_delivery_UI_dialogflow/dialogflow_v2.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -55,7 +54,7 @@ class _MainScreenState extends State<MainScreen> {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => HomePageDialogflowV2()),
+            null,
           );
         },
       ),
